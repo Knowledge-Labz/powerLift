@@ -3,6 +3,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/contains-tasty-spaghetti-code.svg)](http://forthebadge.com)
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
+
 powerLift is a Python interface built to juice PowerShell while keeping a cool head.
 It aims at using PowerShell as its simplest, easiest form while delegating the heavier logical lifting to Python through YAML and Jinja2.
 
