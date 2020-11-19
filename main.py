@@ -41,6 +41,8 @@ def gen_scripts():
         for k, output in render_functions.render_fields_build_scripts(conf_object, fields_object):
             with open(f"out_files/create_fields_for_{k}_{date.today()}.ps1", "w") as fh:
                 fh.write(output)
+    else:
+        return False
 
 
 if __name__ == '__main__':
