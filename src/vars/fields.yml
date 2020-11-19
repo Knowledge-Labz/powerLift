@@ -1,0 +1,14 @@
+TS21:
+      - Documents:
+              Signed:
+                  display_name: Confirmation de signature
+                  internal_name: signed_confirmed
+                  type: Boolean
+              DateSigned:
+                  display_name: Date de signature
+                  internal_name: signed_confirmed_date
+                  type: DateTime
+              Salesperson:
+                  display_name: Vendeur
+                  internal_name: assigned_salesperson
+                  type: User

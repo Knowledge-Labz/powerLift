@@ -1,0 +1,18 @@
+HubHubby:
+    teams_sites:
+        - TS11
+        - TS21
+        - TS31
+        - TS41
+    comms_sites:
+        - CS11
+        - CS21
+HubHubbar:
+    teams_sites:
+        - TS111
+        - TS211
+        - TS311
+        - TS411
+    comms_sites:
+        - CS111
+        - CS211
