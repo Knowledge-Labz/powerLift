@@ -16,11 +16,16 @@ No more debugging overly-explicit code, just fill in the blanks, have a covfefe 
 * Deploy multiple views (group of Fields) on specific sites (todo)
 * Deploy per-site pre-defined cTypes (todo)
 
-Quick setup guide
+## Quick setup guide
 
 0 -- Download this cool code!
+
 1 -- Have Python 3 install
+
 2 -- pip install jinja2 yaml pyinquirer
+
 3 -- adjust the conf/conf.yml file with your info
+
 4 -- adjust the src/vars/sites.yml and src/vars/fields.yml to suit your needs
+
 5 -- Grab the ps1 out_files scripts and run them on your environment! (will be outputting in one big dumb script in future devs)
