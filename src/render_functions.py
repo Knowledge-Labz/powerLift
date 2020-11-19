@@ -4,7 +4,7 @@ from datetime import date
 
 
 def render_build_sites_scripts(conf, sites):
-    template = Template(open('templates/buildSites.ps1').read())
+    template = Template(open('src/templates/buildSites.ps1').read())
     for key, v in sites.items():
         yield (key, template.render(teams_sites=v["teams_sites"],
                                     comms_sites=v["comms_sites"],
@@ -14,20 +14,20 @@ def render_build_sites_scripts(conf, sites):
 
 
 def render_build_nav_scripts(conf, sites):
-    template = Template(open('templates/buildNavs.ps1').read())
+    template = Template(open('src/templates/buildNavs.ps1').read())
     for key, v in sites.items():
         yield (key, template.render(teams_sites=v["teams_sites"],
                                     comms_sites=v["comms_sites"],
-                                    hub_name=k,
+                                    hub_name=key,
                                     mainsite_url=conf["mainsite_url"],
                                     username=conf["username"]))
 
 
 def render_fields_build_scripts(conf, fields):
-    template = Template(open('templates/addColumns.ps1').read())
+    template = Template(open('src/templates/addColumns.ps1').read())
     for key, v in fields.items():
         yield (key, template.render(site_lists=v,
-                                    site_url=f"{conf['mainsite_url']}/teams/{k.lower()}",
+                                    site_url=f"{conf['mainsite_url']}/teams/{key.lower()}",
                                     username=conf["username"]))
 
 
